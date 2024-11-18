@@ -6,11 +6,17 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text('Notes'),
-        CustomSearchIcon(),
-      ],
+    return SafeArea(
+      child: Row(
+        children: [
+          Text(
+            'Notes',
+            style: TextStyle(fontSize: 28),
+          ),
+          Spacer(),
+          CustomSearchIcon(),
+        ],
+      ),
     );
   }
 }
